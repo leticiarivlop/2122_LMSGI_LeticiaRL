@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
- <!DOCTYPE acividades [
-<!ELEMENT actividades (actividad)>
-                <!ELEMENT actividad (codigo,titulo,fecha_inicio,sesiones)> 
-                       <!ELEMENT codigo (#PCDATA)>
-                       <!ELEMENT titulo (#PCDATA)>
-                       <!ELEMENT fecha_inicio (#PCDATA)>
-                <!ELEMENT sesiones (minutos_sesiones,sesiones_semana)>
-                      <!ELEMENT minutos_sesisones (#PCDATA)>
-                      <!ELEMENT sesiones_semana (#PCDATA)>
-                
- ]>
+ 
 <actividades>
     <actividad nivel="infantil">
         <codigo>A01</codigo>
