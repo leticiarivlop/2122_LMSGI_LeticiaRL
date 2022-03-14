@@ -45,7 +45,9 @@
                         <!--Valor opcional --> 
 ]>
 
-<mapaestelar>
+
+<mapaestelar xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+           xsi:noNamespaceSchemaLocation='04.xsd'>
     <constelacion nombreLatin="Ursa Maior">
         <nombre>La Osa Mayor</nombre>
         <superficie>1279,7</superficie>
@@ -76,8 +78,8 @@
         </colindantes>
         <observacion>
             <hemisferio>Norte</hemisferio>
-            <mes>04</mes>
-            <hora>21:00</hora>
+            <mes>--04</mes>
+            <hora>21:00:00</hora>
         </observacion>
     </constelacion>
     <estrella>
