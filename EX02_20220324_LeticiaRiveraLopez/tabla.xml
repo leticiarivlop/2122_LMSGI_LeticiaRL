@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tabla_periodica SYSTEM "tabla.dtd"> 
+
+<tabla_periodica 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='tabla.xsd'>
+    <atomo periodo="1" grupo="1" bloque="s">
+        <nombre>Hidrogeno</nombre>
+        <simbolo>H</simbolo>
+        <numeroatomico>1</numeroatomico>
+        <valencias>
+            <valencia>1</valencia>
+        </valencias>
+        <pesoatomico>1,00797</pesoatomico>
+        <puntoebullicion unidad="K">20,268</puntoebullicion>
+        <puntofusion unidad="K">14,025</puntofusion>
+        <densidad valor="0,071"></densidad>
+    </atomo>
+    <atomo periodo="5" grupo="8" bloque="d">
+        <nombre>Rutenio</nombre>
+        <simbolo>Ru</simbolo>
+        <numeroatomico>44</numeroatomico>
+        <valencias>
+            <valencia>2</valencia>
+            <valencia>3</valencia>
+            <valencia>4</valencia>
+            <valencia>6</valencia>
+            <valencia>8</valencia>
+        </valencias>
+        <pesoatomico>101,07</pesoatomico>
+        <puntoebullicion unidad="C">4900</puntoebullicion>
+        <puntofusion unidad="C">2500</puntofusion>
+        <densidad valor="12,2"></densidad>
+    </atomo>
+    <atomo periodo="6" grupo="17" bloque="p">
+        <nombre>Astato</nombre>
+        <simbolo>At</simbolo>
+        <numeroatomico>85</numeroatomico>
+        <valencias>
+            <valencia></valencia>
+        </valencias>
+        <pesoatomico>85</pesoatomico>
+        <puntoebullicion unidad=""></puntoebullicion>
+        <puntofusion unidad="C">302</puntofusion>
+        <densidad valor=""></densidad>
+    </atomo>
+</tabla_periodica>
