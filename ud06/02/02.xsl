@@ -25,7 +25,7 @@
                 <meta name="keywords" content="HTML, CSS,XSLT,XSL"/>
                 <meta name="author" content="Leticia Rivera López"/>
                 <meta http-equiv="refresh" content="300"/>
-                <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+                <link href="estilos.css" rel="stylesheet" type="text/css"/>
                 <link rel="icon" type="image/png" href="../../images/favicon-32x32.png"/>
             </head>
             <body>
@@ -37,8 +37,10 @@
     </xsl:template>
     <xsl:template match="listatickets/ticket">
         <div>
+            <div class="numeroticket">
             <xsl:value-of select="concat('Ticket:',numero)"/>
-            
+            </div>
+            <div class="tabla">
             <table>
                 <thead>
                     <tr>
@@ -60,6 +62,7 @@
             </table>
             <div class="fecha">
                 <xsl:value-of select="concat('Fecha del tickets',fecha)"/>
+            </div> 
             </div>
         </div>
     </xsl:template>
@@ -73,5 +76,4 @@
             </td>
         </tr>
     </xsl:template>
-
 </xsl:stylesheet>

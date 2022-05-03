@@ -44,48 +44,60 @@
         </xsl:text>
     </xsl:template>
     <xsl:template match="garaje/coches/coche">
-        <table>
-                <thead>
-                    <tr>
-                        <th>Matricula</th>
-                        <th>Reparacion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <xsl:value-of select="matricula"/>
-                        </td>
-                        <td>
-                            <xsl:apply-templates select="//reparacion[current()/matricula=matricula]"/>
-                            <!-- Totales a pagar-->
-                            <div>
-                                Numero de Reparaciones: <xsl:value-of select="count(//reparacion[current()/matricula=matricula])"/>
-                            </div>
-                            <div>
-                                Total Horas: <xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)"/>
-                            </div>
-                            <div>
-                                Total a Pagar: <xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)*12"/>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>      
+        <xsl:if test="count(//reparacion[current()/matricula=matricula])&gt;0">
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Reparaciones</th>
+                        </tr>
+                    </thead>   
+                    <tbody>
+                        <tr>
+                            <td id="matricula">
+                                <xsl:value-of select="matricula"/>
+                            </td>
+                            <td>
+                                <xsl:apply-templates select="//reparacion[current()/matricula=matricula]"/>
+                                <!--Totales a pagar-->
+                                <div class="total">
+                                    <div>
+                                        Numero de reparaciones: <xsl:value-of select="count(//reparacion[current()/matricula=matricula])"/>
+                                    </div>
+                                    <div>
+                                        Total Horas: <xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)"/>
+                                    </div>
+                                    <div>
+                                        Total a pagar <xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)*12"/>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>      
                 </table>
+            </div>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="//reparacion[current()/matricula=matricula]">
         <div>
             <p>
                 <xsl:value-of select="current()/@codigo"/>
             </p>
-            <ol>
+            <ul>
                 <li>
                     <xsl:value-of select="descripcion"/>
                 </li>
                 <li>
-                    <xsl:value-of select="concat('Fecha_entrada: ',fecha_entrada)"/>
+                    <xsl:value-of select="concat('Fecha de entrada: ',fecha_entrada)"/>
                 </li>
-            </ol>
+                <li>
+                    <xsl:value-of select="concat('Fecha de salida: ',fecha_salida)"/>
+                </li>
+                <li>
+                    <xsl:value-of select="concat(horas,' horas')"/>
+                </li>
+            </ul>
         </div>
     </xsl:template>
 </xsl:stylesheet>

@@ -8,14 +8,22 @@ and open the template in the editor.
     Author     : daw1
 */
 
-table,
-td {
-    border: 1px solid #008000;
+h1{
+    color:green;
+    background-color: grey;
 }
-
-thead,
-tfoot {
-    background-color: #008000;
-    color: #008000;
+h2{
+    color:grey;
+    background-color:green;
 }
-
+.fecha{
+    color:green;
+    font-style: oblique;
+}
+.numeroticket{
+    color:green;
+    border: solid 1px greenyellow;
+}
+.tabla{
+    text-align:  center;
+}

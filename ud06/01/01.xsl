@@ -18,11 +18,21 @@
         <html>
             <head>
                 <title>XSLT 01 Leticia Rivera López</title>
+                 <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>    
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="description" content="Prototipo"/>
+                <meta name="keywords" content="HTML, CSS,XSLT,XSL"/>
+                <meta name="author" content="Leticia Rivera López"/>
+                <meta http-equiv="refresh" content="300"/>
+                <link href="estilos.css" rel="stylesheet" type="text/css"/>
+                <link rel="icon" type="image/png" href="../../images/favicon-32x32.png"/> 
             </head>
             <body>
                 <h1>Informacion de las viviendas</h1>
                <xsl:apply-templates select="edificio/vivienda"/>
-               <div>
+               <div class="viviendas">
                    <div>Numero de viviendas<xsl:value-of select="count(//vivienda)"/></div>
                    <div>Total vecinos:<xsl:value-of select="count(//nombre)"/></div>
                </div>
