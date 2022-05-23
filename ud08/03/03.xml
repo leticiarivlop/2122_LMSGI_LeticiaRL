@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<consolas>
+    <consola>
+        <nombre>XBox Series</nombre>
+        <fabricante>Microsoft</fabricante>
+        <anyo>2020</anyo>
+    </consola>
+    <consola>
+        <nombre>Play Station 5</nombre>
+        <fabricante>Sony</fabricante>
+        <anyo>2020</anyo>
+    </consola>
+</consolas>
