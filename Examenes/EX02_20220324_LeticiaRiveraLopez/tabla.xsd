@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="tabla_periodica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="atomo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="simbolo" minOccurs="1" maxOccurs="3"/>
+                            <xs:element name="numeroatomico">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1" />
+                                        <xs:maxInclusive value="118" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="valencias" minOccurs="1" maxOccurs="6">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valencia" type="xs:nonNegativeInteger"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pesoatomico" type="xs:float"/>
+                            <xs:element name="puntoebullicion" type="xs:float">
+                                <xs:complexType>
+                                    <xs:attribute name="unidad"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="puntofunsion" type="xs:float">
+                                <xs:complexType>
+                                    <xs:attribute name="unidad" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="densidad">
+                                <xs:complexType>
+                                    <xs:attribute name="valor" type="xs:float"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="periodo" type="xs:integer"/>
+                        <xs:attribute name="grupo" type="xs:integer" />
+                        <xs:attribute name="bloque" type="xs:integer" />
+                    </xs:complexType> 
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

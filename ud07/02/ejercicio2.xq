@@ -1,5 +1,5 @@
 for $libro in /bookstore/book
-let $precio_iva := ($libro/price * 1.21)
+let $precio_iva := ceiling($libro/price * 1.21)
 order by $precio_iva
 return 
 <libro>

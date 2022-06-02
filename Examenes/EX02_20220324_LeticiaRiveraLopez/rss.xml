@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<rss version="2.0"> 
+    <channel>
+        <title>LRLNovedades de Tecnologia de la informacion</title>
+        <link>https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/index.html</link>
+        <description>ExamenLenguajedeMarcas</description>
+        <item>
+            <title> Datos de la Tabla Peridica</title>
+            <link>https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/tabla.xml</link>
+            <description>Datos de la Tabla periodica</description>
+            <category>xml "open data"</category>
+            <guid isPermaLink="true">https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/tabla.xml</guid>
+        </item>
+        <item>
+            <title>Validacion de la Tabla Periodica</title>
+            <link>https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/tabla.xsd</link>
+            <description>Validacion de la Tabla Periodica</description>
+            <category>xml "open data"</category>
+            <guid isPermaLink="true">https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/tabla.xsd</guid>
+        </item>
+        <item>
+            <title>Consultas en la BD alumnos</title>
+            <link>https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/Xpath.pdf</link>
+            <description>Consultas en la BD alumnos</description>
+            <category> xml "open data"</category>
+            <guid isPermaLink="true" >https://daw104.ieslossauces.es/EX02_20220324_LeticiaRiveraLopez/Xpath.pdf</guid>
+        </item>
+    </channel>
+</rss>
