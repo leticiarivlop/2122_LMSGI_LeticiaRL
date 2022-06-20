@@ -1,0 +1,37 @@
+
+       {
+        "data": {
+            "localidad": "Madrid",
+        "day": [
+            
+            {
+            "temperatura_max":"13",
+            "temperatura_min":"7"
+            },
+            {
+            "temperatura_max":"12",
+            "temperatura_min":"5"
+            },
+            {
+            "temperatura_max":"15",
+            "temperatura_min":"7"
+            },
+            {
+            "temperatura_max":"9",
+            "temperatura_min":"5"
+            },
+            {
+            "temperatura_max":"8",
+            "temperatura_min":"3"
+            },
+            {
+            "temperatura_max":"9",
+            "temperatura_min":"3"
+            },
+            {
+            "temperatura_max":"10",
+            "temperatura_min":"4"
+            }
+          ]} 
+          }
+    

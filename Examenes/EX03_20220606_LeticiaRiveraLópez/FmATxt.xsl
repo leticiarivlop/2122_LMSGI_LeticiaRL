@@ -15,21 +15,16 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/lfm">
+{
         "Artista": "<xsl:value-of select="topalbums/@artist"/>",
         "Albunes": [<xsl:for-each select="topalbums/album">
             {
             "Nombre":"<xsl:value-of select="name"/>",<text></text>
             "Url":"<xsl:value-of select="url"/>"
-            }<xsl:apply-templates select="topalbums/album"/>
+            }<xsl:if test="position()!=last()">,</xsl:if>
         </xsl:for-each>
-        }]
-    </xsl:template>
-    <xsl:template match="topalbums/album">
-      {​​​​​​​
-          <xsl:apply-templates select="*"/>
-      }​
-    </xsl:template>
-    <xsl:template match="*">
-        "<xsl:value-of select="url"/>":"<xsl:value-of select="current()"/>"<xsl:if test="position()!=last()">,</xsl:if>
+            ]
+}
+            
     </xsl:template>
 </xsl:stylesheet>

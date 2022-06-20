@@ -32,7 +32,5 @@
                <a href=""><xsl:value-of select="@name"/></a>
         </xsl:for-each>
         </div>
-        
-        
     </xsl:template>
 </xsl:stylesheet>
